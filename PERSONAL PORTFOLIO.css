@@ -1,0 +1,62 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+#navbar {
+  position: fixed; /* always at top */
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+  z-index: 1000;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+#navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Welcome Section */
+#welcome-section {
+  height: 100vh; /* full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+/* Projects Section */
+#project-section {
+  padding: 50px 20px;
+  background-color: #e0e0e0;
+  text-align: center;
+}
+
+.project-tile {
+  margin: 20px;
+  padding: 10px;
+  background-color: #fff;
+  display: inline-block;
+  border: 1px solid #ccc;
+}
+
+/* Media Query Example */
+@media (max-width: 600px) {
+  #navbar {
+    font-size: 14px;
+  }
+
+  .project-tile {
+    width: 90%;
+  }
+}

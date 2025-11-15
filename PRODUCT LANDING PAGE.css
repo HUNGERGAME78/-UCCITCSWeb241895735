@@ -1,0 +1,50 @@
+/* NAVBAR ALWAYS AT TOP */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  padding: 10px 20px;
+
+  /* FLEXBOX REQUIRED */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid #ddd;
+}
+
+/* Prevent content from hiding behind header */
+body {
+  margin: 0;
+  padding-top: 100px;
+  font-family: Arial, sans-serif;
+}
+
+#nav-bar a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* Video responsive */
+#video {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+}
+
+/* REQUIRED MEDIA QUERY */
+@media (max-width: 600px) {
+  #header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #nav-bar a {
+    margin: 10px;
+    display: block;
+  }
+}
